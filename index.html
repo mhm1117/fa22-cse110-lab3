@@ -78,7 +78,36 @@
     </details>
     
     <footer>
-      
+      <form>
+        <fieldset>
+          <legend>Enter your details.</legend>
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" size="20">
+          <label for="email">Email Address:</label>
+          <input type="text" id="email" name="email" size="30">
+        </fieldset>
+        
+        <label for="location">Select your location:</label>
+        <input list="locations" id="location" name="location">
+        <datalist id="locations">
+          <option value="La Jolla"></option>
+          <option value="Pacific Beach"></option>
+          <option value="Hillcrest"></option>
+          <option value="Mira Mesa"></option>
+        </datalist>
+        
+        <label for="time">Pick a timeframe:</label>
+        <select name="times" id="time">
+          <option value="">Please choose a timeframe</option>
+          <option value="morning">Morning</option>
+          <option value="afternoon">Afternoon</option>
+          <option value="evening">Evening</option>
+        </select>
+          
+        <label for="comment">Tell us what you need:</label>
+        <textarea id="comment" name="comment" rows="5" cols="50">
+        </textarea>
+      </form>
     </footer>
   </body>
 </html>
