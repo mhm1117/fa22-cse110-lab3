@@ -1,3 +1,2 @@
-# Lab 2 - Starter
+# Lab 3
 
-https://mhm1117.github.io/Lab2_Starter/
