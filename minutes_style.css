@@ -3,6 +3,13 @@ html {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+h1 {
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+}
+
 body {
   width: 1400px;
   margin: 0 auto;
