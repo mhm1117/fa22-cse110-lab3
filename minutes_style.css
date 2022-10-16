@@ -17,7 +17,9 @@ body {
   margin: 0 auto;
   background-color: rgb(214, 219, 219);
   padding: 0;
-  border: 5px solid black;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black;
 }
 
 main {
