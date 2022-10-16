@@ -2,7 +2,7 @@
 name: Lab Issues Template
 about: Issues for tasks for cse 110 labs
 title: ''
-labels: bug, CSS Checklist Item, Style/Edit Minutes Section, Update/Edit
+labels: ''
 assignees: mhm1117
 
 ---
