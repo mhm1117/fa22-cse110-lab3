@@ -120,3 +120,9 @@ video {
     display: none;
   }
 }
+
+li > strong {
+  display: inline-block;
+  color: red;
+  border-bottom: 2px dotted red;
+}
