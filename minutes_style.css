@@ -1,5 +1,8 @@
 html {
   background-color: #CEF7F7;
+}
+
+* {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -11,6 +14,7 @@ body {
   border-width: 5px;
   border-style: solid;
   border-color: black;
+  border-radius: 5px;
 }
 
 h1 {
@@ -54,8 +58,24 @@ main {
 
 #agenda-grid {
   display: grid;
+  grid-auto-rows: minmax(40px, auto);
+  grid-template-columns: 1fr;
 }
 
-.grid-item {
-  
+.grid-p,
+.grid-h {
+  margin: 0;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#top {
+  border-top: 2px solid black;
+}
+
+.grid-h {
+  display: flex;
+  align-items: flex-end;
+  color: #053565;
 }
