@@ -1,35 +1,39 @@
 html {
-  background-color: #CEF7F7;
+  background-color: #CEF7F7; /* light blue */
 }
 
 * {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+/* sets body under gray background, with side margins, and black border */
 body {
   width: 80%;
   margin: auto;
-  background-color: rgb(238, 240, 240);
-  padding: 0;
+  background-color: rgb(238, 240, 240); /* light gray */
+  padding: 0;   /* want to fill out border */
   border-width: 5px;
   border-style: solid;
   border-color: black;
   border-radius: 5px;
 }
 
+/* set main title w/ bigger font and centered */
 h1 {
   margin: 0;
   font-size: 60px;
   text-align: center;
 }
 
+/* sets section headings as slightly larger and underline */
 h2 {
-  position: static;
-  text-align: left;
+  position: static; /* just for practice - doesn't change anything */
+  text-align: left; /* just for practice - doesn't change anything */
   font-size: 2em;
   text-decoration: underline;
 }
 
+/* header contains title + icons, adds some padding and border between header + main (rest of text) */
 header {
   margin: 0;
   padding-top: 5px;
@@ -38,18 +42,21 @@ header {
   border-bottom: 5px solid black;
 }
 
+/* creates flex box for header, center aligns everything with space around */
 .header-box {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-img {
+/* images within header flex box keep same width + height, and can't grow */
+img.flex-item {
   height: auto;
   max-width: 100%;
   flex: 0 1 0;
 }
 
+/* adds margin for main text body */
 main {
   margin-top: 10px;
   margin-right: 10px;
@@ -57,12 +64,15 @@ main {
   margin-bottom: 30px;
 }
 
+/* creates grid for agenda section using id to reference everything in except agenda title */
 #agenda-grid {
   display: grid;
-  grid-auto-rows: minmax(40px, auto);
-  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(40px, auto); /* rows at least 40px, but can grow */
+  grid-template-columns: 1fr; /* 1 column/box per row, fills it out */
 }
 
+/* references both headers and parapgraph children of agenda grid using class names */
+/* adds a border to the bottoms and sides, not top so no overlap */
 .grid-p,
 .grid-h {
   margin: 0;
@@ -71,56 +81,68 @@ main {
   border-bottom: 2px solid black;
 }
 
+/* only adds top border to top box of agenda grid */
 #top {
   border-top: 2px solid black;
 }
 
+/* aligns headers of agenda grid with bottom of box using flex and colors them a dark blue */
 .grid-h {
   display: flex;
   align-items: flex-end;
-  color: #053565;
+  color: #053565; /* dark blue */
 }
 
+/* when summary for next meeting is opened, highlights label light blue */
 summary:active {
-  background-color: #CEF7F7;
+  background-color: #CEF7F7; /* light blue */
 }
 
+/* when you hover over links for navigating sections towards top of page, highlights the label light blue */
 a[href^="#"]:hover {
-  background-color: #CEF7F7;
+  background-color: #CEF7F7; /* light blue */
 }
 
+/* adds black border to any imgs, videos, or audio in media section */
 #media > img,
 video,
 audio {
   border: 2px solid black;
 }
 
+/* makes font of any list items in additions section large */
 #additions li {
   font-size: large;
 }
 
+/* any paragraph that adjacent sibling to top heading of agenda grid is highlighted green */
 #top + p {
   background-color: lightgreen;
 }
 
+/* moves the ordered list under atendees header up closer to header, makes it bolder and dark blue */
 h3 ~ ol {
   position: relative;
   bottom: 15px;
-  color: #053565;
+  color: #053565; /* dark blue */
   font-weight: 600;
 }
 
+/* makes any video a minimum size */
 video {
   min-height: 4in;
   min-width: 5in;
 }
 
+/* does a media query about size of window screen, if under certain size that makes the images in the header go weird
+it hides the images */
 @media (max-width: 60rem) {
   img.flex-item {
     display: none;
   }
 }
 
+/* sets the strong text in a list item, which is the strong text in the additions section, to red and underlined */
 li > strong {
   display: inline-block;
   color: red;
