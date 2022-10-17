@@ -24,6 +24,7 @@ h1 {
 }
 
 h2 {
+  position: static;
   text-align: left;
   font-size: 2em;
   text-decoration: underline;
@@ -112,4 +113,10 @@ h3 ~ ol {
 video {
   min-height: 4in;
   min-width: 5in;
+}
+
+@media (max-width: 60rem) {
+  img.flex-item {
+    display: none;
+  }
 }
