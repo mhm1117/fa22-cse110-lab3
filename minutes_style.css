@@ -87,3 +87,29 @@ summary:active {
 a[href^="#"]:hover {
   background-color: #CEF7F7;
 }
+
+#media > img,
+video,
+audio {
+  border: 2px solid black;
+}
+
+#additions li {
+  font-size: large;
+}
+
+#top + p {
+  background-color: lightgreen;
+}
+
+h3 ~ ol {
+  position: relative;
+  bottom: 15px;
+  color: #053565;
+  font-weight: 600;
+}
+
+video {
+  min-height: 4in;
+  min-width: 5in;
+}
