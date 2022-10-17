@@ -3,16 +3,26 @@ html {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+body {
+  width: 80%;
+  margin: auto;
+  background-color: rgb(238, 240, 240);
+  padding: 0;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black;
+}
+
 h1 {
   margin: 0;
   font-size: 60px;
   text-align: center;
 }
 
-img {
-  height: auto;
-  max-width: 100%;
-  flex: 0 1 0;
+h2 {
+  text-align: left;
+  font-size: 2em;
+  text-decoration: underline;
 }
 
 header {
@@ -29,20 +39,10 @@ header {
   align-items: center;
 }
 
-h2 {
-  text-align: left;
-  font-size: 2em;
-  text-decoration: underline;
-}
-
-body {
-  width: 80%;
-  margin: auto;
-  background-color: rgb(238, 240, 240);
-  padding: 0;
-  border-width: 5px;
-  border-style: solid;
-  border-color: black;
+img {
+  height: auto;
+  max-width: 100%;
+  flex: 0 1 0;
 }
 
 main {
@@ -50,4 +50,8 @@ main {
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 30px;
+}
+
+#agenda-grid {
+  display: grid;
 }
