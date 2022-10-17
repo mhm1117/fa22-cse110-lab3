@@ -16,6 +16,11 @@ header {
   background-color: white;
 }
 
+.header-box {
+  display: flex;
+  justify-content: space-around;
+}
+
 h2 {
   text-align: left;
   font-size: 2em;
@@ -23,7 +28,7 @@ h2 {
 }
 
 body {
-  width: 1000px;
+  width: 1200px;
   margin: 20px auto;
   background-color: rgb(238, 240, 240);
   padding: 0;
