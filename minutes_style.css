@@ -79,3 +79,11 @@ main {
   align-items: flex-end;
   color: #053565;
 }
+
+summary:active {
+  background-color: #CEF7F7;
+}
+
+a[href^="#"]:hover {
+  background-color: #CEF7F7;
+}
